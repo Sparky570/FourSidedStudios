@@ -196,7 +196,7 @@ public class Player : MonoBehaviour, IDataPersistence
     {
         float interactDistance = 1.2f;
 
-        Vector3 moveDir = transform.TransformDirection(Vector3.forward);
+            Vector3 moveDir = transform.TransformDirection(Vector3.forward);
 
         Debug.DrawRay(RayZone.transform.position, moveDir, Color.green);
         if (Physics.Raycast(RayZone.transform.position, moveDir, out RaycastHit raycastHit, interactDistance, interactablesLayerMask))
